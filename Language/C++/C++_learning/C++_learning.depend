@@ -1,0 +1,155 @@
+# depslib dependency file v1.0
+1584205420 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\main.cpp
+	<iostream>
+
+1621940091 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\3.referance variable.cpp
+	<iostream>
+
+1621941745 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\4-1.iostream.cpp
+	<iostream>
+
+1621942396 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\5.typecasting.cpp
+	<iostream>
+
+1622026664 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\8.operator.cpp
+	<iostream>
+
+1622626090 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\9.1.controlflow statment-if else.cpp
+	<iostream>
+
+1622626631 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\9.2.controlflow statment-if else-else if.cpp
+	<iostream>
+
+1622711360 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\10.leap year.cpp
+	<iostream>
+
+1622713204 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\11.switch case.cpp
+	<iostream>
+
+1622715369 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\11.2 continue.cpp
+	<iostream>
+
+1622716031 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\11.1.break statement.cpp
+	<iostream>
+
+1622716517 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\11.3.goto statement.cpp
+	<iostream>
+
+1623130555 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\12.2 while loop factorial.cpp
+	<iostream>
+
+1623135426 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\12.5 print triangle.cpp
+	<iostream>
+
+1623136034 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\12.5 print alphabhate pramid.cpp
+	<iostream>
+
+1623319788 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\13.2 function pointer.cpp
+	<iostream>
+
+1623339469 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\prebytes.cpp
+	<iostream>
+
+1623387642 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\14.array.cpp
+	<iostream>
+
+1623389441 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\14.1.2darray.cpp
+	<iostream>
+
+1623391927 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\15.pointer.cpp
+	<iostream>
+
+1623393103 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\15.1.null pointer.cpp
+	<iostream>
+
+1623396625 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\16.string .cpp
+	<iostream>
+
+1623397690 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\16.1. string input.cpp
+	<iostream>
+
+1623398253 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\16.2.multi string input.cpp
+	<iostream>
+
+1623401669 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\17.1.dynamic mem allocation with array.cpp
+	<iostream>
+
+1623402547 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\17.2.date time in cpp.cpp
+	<ctime>
+	<iostream>
+
+1623403991 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\17.tm struct.cpp
+	<ctime>
+	<iostream>
+
+1623420549 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\18.struct.cpp
+	<iostream>
+
+1623431172 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\18.1.structure as pointer.cpp
+	<iostream>
+
+1623433982 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\18.3.structure and function together.cpp
+	<iostream>
+
+1623436149 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\18.4 program that run  two array to count all pairs to find min odd or even.cpp
+	<iostream>
+
+1623479729 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\19.2.accessing data member with classes in c++.cpp
+	<iostream>
+
+1623481854 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\19.3.class  member of function with classes in c++.cpp
+	<iostream>
+
+1623482958 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\19.4 access specifier in cpp.cpp
+	<iostream>
+
+1623484982 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\19.4 .1.access specifier in cpp.cpp
+	<iostream>
+
+1623488348 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\19.5.constructor.cpp
+	<iostream>
+
+1623490891 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\19.8.copy constructor.cpp
+	<iostream>
+
+1623492714 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\19.9 friend function.cpp
+	<iostream>
+
+1623494003 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\19.10.inline fuction.cpp
+	<iostream>
+
+1623494478 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\19.11.this pointer.cpp
+	<iostream>
+
+1623509101 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\20.1.multilevel inheritance.cpp
+	<iostream>
+
+1623521061 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\22.encapsulation.cpp
+	<iostream>
+
+1623523493 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\24.exception handling.cpp
+	<iostream>
+
+1623525041 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\25.polyorphism.cpp
+	<iostream>
+
+1623525817 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\26.template function.cpp
+	<iostream>
+
+1623526909 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\27.factorial-recursion.cpp
+	<iostream>
+
+1623528322 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\28.filehandling-file created.cpp
+	<iostream>
+	<fstream>
+
+1623528716 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\28.filehandling-file writing.cpp
+	<iostream>
+	<fstream>
+
+1623532570 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\30.stck.cpp
+	<iostream>
+
+1623534476 source:f:\naveen\it_learning vidio\langague\c++\ex-c++\c++_learning\31.queue.cpp
+	<iostream>
+
