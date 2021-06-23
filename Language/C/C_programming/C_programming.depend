@@ -1,0 +1,147 @@
+# depslib dependency file v1.0
+1620899443 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\15.scanf-to get user input.c
+	<stdio.h>
+
+1620901413 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\16.ex- find gross salery.c
+	<stdio.h>
+
+1620904731 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\17.ex-cel to far.c
+	<stdio.h>
+
+1620905925 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\18.ex-swap number.c
+	<stdio.h>
+
+1620987770 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\20.relational operators.c
+	<stdio.h>
+
+1620989285 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\21.if else conditional statement.c
+	<stdio.h>
+
+1620991296 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\22.ex-bonus based on basic salery.c
+	<stdio.h>
+
+1620992784 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\23.ex-greater no between 3 nubers.c
+	<stdio.h>
+
+1621052561 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\24.relational operator.c
+	<stdio.h>
+
+1621052886 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\25.ex-greater no between 3 nubers using relational operator.c
+	<stdio.h>
+
+1621053908 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\26.coditional operator.c
+	<stdio.h>
+
+1621055848 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\27.ex-leapyear.c
+	<stdio.h>
+
+1621057028 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\28.decide number or cap or small.c
+	<stdio.h>
+
+1621059400 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\29.ex-bonus calculated using while loop.c
+	<stdio.h>
+
+1621140673 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\30.ex-bonus calculated using forloop.c
+	<stdio.h>
+
+1621148924 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\31.ex-bonus calculated using do while.c
+	<stdio.h>
+
+1621151299 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\33.brak and continue.c
+	<stdio.h>
+
+1621152655 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\temp.c
+	<stdio.h>
+	<stdlib.h>
+
+1621164243 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\35.ex-factorial.c
+	<stdio.h>
+
+1621166706 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\36.ex-prime number.c
+	<stdio.h>
+
+1621169779 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\37.swit_chcase.c
+	<stdio.h>
+
+1621169883 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\38.function.c
+	<stdio.h>
+
+1621170298 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\39.ex-square function.c
+	<stdio.h>
+
+1621171729 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\39.ex-samll alphabat conver function.c
+	<stdio.h>
+
+1621174124 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\42.recurrsion.c
+	<stdio.h>
+
+1621239770 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\43.goto statement.c
+	<stdio.h>
+
+1621242081 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\44.ex-triangular.c
+	<stdio.h>
+
+1621248872 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\45.ex-students avg using array.c
+	<stdio.h>
+
+1621251238 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\46.addition of two matric 3x3.c
+	<stdio.h>
+
+1621253546 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\47.pointers.c
+	<stdio.h>
+
+1621254773 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\48.ex-function pointer.c
+	<stdio.h>
+
+1621255186 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\49.ex-addition of teo numbers by fuction pass pointer.c
+	<stdio.h>
+
+1621257810 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\50.string.c
+	<stdio.h>
+
+1621258519 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\51.ex-find how many letter string has.c
+	<stdio.h>
+
+1621268682 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\53.structure.c
+	<stdio.h>
+
+1621275666 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\54.file in c program.c
+	<stdio.h>
+
+1621274392 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\55.write file.c
+	<stdio.h>
+
+1621275168 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\56.file append.c
+	<stdio.h>
+
+1621277118 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\57.assignment.c
+	<stdio.h>
+
+1621337207 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\mini-students.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1621425735 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\mini.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1621365541 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\password.c
+	<stdio.h>
+
+1621434804 source:f:\naveen\it_learning vidio\c\ex_c\c_programming\preemptive scduling.c
+	<stdio.h>
+	<stdlib.h>
+
+1622862714 source:f:\naveen\it_learning vidio\langague\c\ex_c\c_programming\population.c
+	<stdio.h>
+
+1623254462 source:f:\naveen\it_learning vidio\langague\c\ex_c\c_programming\scrabble.c
+	<stdio.h>
+
+1623255813 source:f:\naveen\it_learning vidio\langague\c\ex_c\c_programming\scrabble1.c
+	<ctype.h>
+	<stdio.h>
+	<string.h>
+
