@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>29.Date and Regular Expression</title>
+        <script>
+            //Date and Regular Expression
+            //Date
+            var date = new Date()
+            console.log(date)
+
+            var date = new Date('1 Jan 2019')
+            console.log(date)
+            console.log(date.valueOf())
+
+            //Basic Regular expression
+            //finding 0-9 number in strings using constructor
+            var RegEx = /[0-9]/;
+            console.log(RegEx.test('some text'))//false
+            console.log(RegEx.test('some 12345 text'))//True
+
+            //finding 0-9 number in strings using literl methode
+
+            var RegEx = new RegExp('[0-9]');
+            console.log(RegEx.test('some text'))//false
+            console.log(RegEx.test('some 12345 text'))//True
+
+
+        </script>
+    </head>
+    <body style="background-color: aqua;color: brown;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <h1>29.Date and Regular Expression</h1>
+        <pre>//Date and Regular Expression
+            //Date
+            var date = new Date()
+            console.log(date)
+
+            var date = new Date('1 Jan 2019')
+            console.log(date)
+            console.log(date.valueOf())
+
+            //Basic Regular expression
+            var RegEx = /[0-9]/;
+            console.log(RegEx.test('some text'))//false
+            console.log(RegEx.test('some 12345 text'))//True
+
+            var RegEx = new RegExp('[0-9]');
+            console.log(RegEx.test('some text'))//false
+            console.log(RegEx.test('some 12345 text'))//True</pre>
+    </body>
+</html>

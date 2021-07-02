@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>19.object type</title>
+        <script>
+            var emp1 = new Object();
+            
+            emp1.name = 'kumar';
+            emp1.desigination = 'Project Manager';
+            emp1.salary = 75000;
+
+            //display em1 details
+            for (prop in emp1)
+            {
+                console.log(prop, emp1[prop])
+            }
+
+
+            //data properties:
+            //configuraiton
+            //Enumuration
+            //writable
+            //value
+
+            //1.value > assigning the data to variable
+            emp1.name = 'nithy';
+
+            // display modified data
+            console.log(emp1.name)
+
+
+            //wirtable
+            Object.defineProperty(emp1,'name',{configurable:true,
+                writable:false,//to make false to diable write access
+                enumerable :true,
+                value:'krishna'
+            });
+
+            emp1.name = 'nithy'
+            //name wont't change
+            console.log(emp1.name)
+            
+            //Enumerateable
+            for(prop in emp1)
+            {
+                console.log(prop,emp1[prop]);
+            }
+
+            //to make salary as hide to others while using loops
+            //to do that make enumerable as false
+            Object.defineProperty(emp1,'salary',{
+                configurable:true,
+                writable:false,
+                enumerable:false
+            })
+
+
+            //now salary will not be visible
+            for (prop in emp1)
+            {
+                console.log(prop,emp1[prop])
+            }
+
+            //to make variable not able to delete
+            //make configurable as false
+
+            var emp2 = new Object();
+            
+            emp2.name = 'navi';
+            emp2.desigination = 'Project Leader';
+            emp2.salary = 55000;
+            emp2.bonus = 25000;
+
+            console.log(emp2.bonus);
+
+            Object.defineProperty(emp2,'bonus',{
+                configurable:false
+            });
+            //to delete bonus
+            delete emp2.bonus;
+            //still visible emp2.bonus becase we are nit able to delete due to configurable as false.
+            console.log(emp2.bonus)
+
+            
+        </script>
+    </head>
+    <body>
+        <h1>19.object type</h1>
+        <pre>
+            cript>
+                var emp1 = new Object();
+                
+                emp1.name = 'kumar';
+                emp1.desigination = 'Project Manager';
+                emp1.salary = 75000;
+    
+                //display em1 details
+                for (prop in emp1)
+                {
+                    console.log(prop, emp1[prop])
+                }
+    
+    
+                //data properties:
+                //configuraiton
+                //Enumuration
+                //writable
+                //value
+    
+                //1.value > assigning the data to variable
+                emp1.name = 'nithy';
+    
+                // display modified data
+                console.log(emp1.name)
+    
+    
+                //wirtable
+                Object.defineProperty(emp1,'name',{configurable:true,
+                    writable:false,//to make false to diable write access
+                    enumerable :true,
+                    value:'krishna'
+                });
+    
+                emp1.name = 'nithy'
+                //name wont't change
+                console.log(emp1.name)
+                
+                //Enumerateable
+                for(prop in emp1)
+                {
+                    console.log(prop,emp1[prop]);
+                }
+    
+                //to make salary as hide to others while using loops
+                //to do that make enumerable as false
+                Object.defineProperty(emp1,'salary',{
+                    configurable:true,
+                    writable:false,
+                    enumerable:false
+                })
+    
+    
+                //now salary will not be visible
+                for (prop in emp1)
+                {
+                    console.log(prop,emp1[prop])
+                }
+    
+                //to make variable not able to delete
+                //make configurable as false
+    
+                var emp2 = new Object();
+                
+                emp2.name = 'navi';
+                emp2.desigination = 'Project Leader';
+                emp2.salary = 55000;
+                emp2.bonus = 25000;
+    
+                console.log(emp2.bonus);
+    
+                Object.defineProperty(emp2,'bonus',{
+                    configurable:false
+                });
+                //to delete bonus
+                delete emp2.bonus;
+                //still visible emp2.bonus becase we are nit able to delete due to configurable as false.
+                console.log(emp2.bonus)
+    
+                
+            script>
+        </pre>
+    </body>
+</html>

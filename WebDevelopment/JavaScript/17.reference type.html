@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>reference type</title>
+        <script>
+            var person = new Object();
+            //checking obbject or NOT
+            console.log(person instanceof Object);
+
+            //adding attribute and value
+            person.name="Venkat";
+            person.profession = "Software Dvelopment"
+
+            //print refernece detailss:
+            console.log(person.name);
+            console.log(person.profession);
+
+            //create methode(function here we should call as methode)
+            person.sayHi=function(){
+                console.log("Hello !"+ person.name);
+            }
+            person.sayHi();
+
+        </script>
+    </head>
+    <body>
+        <h1>Reference type</h1>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>19.object type</title>
+        <script>
+            var user = new Object();
+            user.name = "kumar";
+            user.sayHi = function(){
+                console.log("HI" + this.name)
+            }  
+            
+            //function call:
+            user.sayHi()   
+
+            //checking own property:
+            console.log(user.hasOwnProperty('name'));
+            console.log(user.hasOwnProperty('sayHi'));
+            console.log(user.hasOwnProperty('toString'));
+            console.log(user.hasOwnProperty('profession'));
+            console.log(user.hasOwnProperty('valueOf'));
+
+            //checking it has property or not
+            console.log(user.toString());
+            console.log(user.valueOf());
+
+
+            
+        </script>
+    </head>
+    <body>
+        <h1>19.object type</h1>
+        <pre>
+            script>
+            var user = new Object();
+            user.name = "kumar";
+            user.sayHi = function(){
+                console.log("HI" + this.name)
+            }  
+            
+            //function call:
+            user.sayHi()   
+
+            //checking own property:
+            console.log(user.hasOwnProperty('name'));
+            console.log(user.hasOwnProperty('sayHi'));
+            console.log(user.hasOwnProperty('toString'));
+            console.log(user.hasOwnProperty('profession'));
+            console.log(user.hasOwnProperty('valueOf'));
+
+            //checking it has property or not
+            console.log(user.toString());
+            console.log(user.valueOf());
+
+
+            
+        script></pre>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Creating Object</title>
+
+        <script>
+            //employee1 object
+            var employee1 = {
+                name :'Kumar',
+                designation : 'Software Developer Trinee',
+                salary : 23000,
+            }
+
+            
+
+            //social media object
+            var socialMedia = new Object()
+            socialMedia.name = 'Youtube'
+            socialMedia.type = 'Youtube Hosting'
+            socialMedia.popularity = 'high'
+
+            //both are not same object but each of them is object
+            console.log(employee1 instanceof Object);
+            console.log(socialMedia instanceof Object);
+
+            //concider function as object
+            function emp(){
+                //
+            }
+            console.log(emp()) //it will say undefined due to it doesn't consider as objcet
+            console.log(new emp()) //now it was consider as Object
+
+            //object To find each object type we need to  use Constructor function 
+            function Employee (name, degination, salary1)
+            {
+                this.name = name;
+                this.degination = degination;
+                this.salary = salary1;
+            }
+
+            //creating object using Constructor function
+            var employee2 = new Employee('Navi', 'AI & ML developer', 12000000)
+            for (prop in employee2)
+            {
+                console.log(employee2[prop])
+            }
+            console.log(employee1 instanceof Object);
+            console.log(employee2 instanceof Employee);//now we are identifying the object with constructor
+            console.log(socialMedia instanceof Employee);
+            //writing simple fuction:
+
+
+        </script>
+    </head>
+    <body>
+        <h1>Creating Object</h1>
+    </body>
+</html>

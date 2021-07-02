@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>13.Alert,prompt, Confirm</title>
+
+        <script>
+            // //alert
+            // alert("hello JS!")
+
+            // //prompt
+            // var name=prompt("what is your name:","anonyoms")
+            // alert("hello "+name+" to JS")
+
+            // //confim
+            // var response=confirm(" I confrm that iam Major!")
+            // alert(response)
+
+            var age=prompt("Enter your Age:");
+
+            if(age > 17)
+            {
+                alert("you are Eligible to ride!");
+            }
+            else
+            {
+                var response= confirm("I confir that i have Parent Permission!");
+                if(response)
+                {
+                    alert("you are Eligible to ride!");
+                }
+                else{
+                    alert("you are not Eligible to ride!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>13.Alert,prompt, Confirm</h1>
+    </body>
+</html>

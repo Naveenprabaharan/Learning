@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>19.object type</title>
+        <script>
+            var emp1 = {
+                name : 'kumar',
+                yoj : 2019,
+                _bonus : 0
+            };
+            
+            console.log(emp1);
+           Object.defineProperty(emp1,'bonus',{
+               get : function()
+               {
+                   return this._bonus;
+               },
+               //to set value for variable under some contarints
+               set : function(newbonus)
+               {
+                   if (newbonus <= 20 && this.yoj < 2019)
+                   {
+                       this._bonus = newbonus
+                   }
+
+               }
+           });
+           //if year "if " condition got passed means bonus value will be 10 ortherwisw same it is
+           emp1.bonus = 10;
+           console.log(emp1.bonus);
+
+
+           //using define properties
+           var emp2 = new Object();
+
+           Object.defineProperties(emp2, {
+               name : {
+                   value : 'nithy'
+               },
+               yoj : {
+                   value : 2019,
+                   writable :true
+               },
+               _bonus : {
+                   value : 0,
+                   writable : true
+               },
+               bonus:{
+                        get : function() {
+                            return this._bonus;
+                            },
+                        set: function(newbonus)
+                        {
+                        if (newbonus <= 20 && this.yoj < 2019)
+                        {
+                            this._bonus = newbonus;
+                        }
+
+                        }
+               }
+               
+
+           });
+
+           emp2.bonus = 10;
+           console.log(emp2.bonus)
+
+           
+           
+           emp2.yoj = 2000;
+           emp2.bonus = 17;
+           
+           console.log(emp2.bonus)
+
+            
+        </script>
+    </head>
+    <body>
+        <h1>19.object type</h1>
+        <pre>
+           
+        </pre>
+    </body>
+</html>

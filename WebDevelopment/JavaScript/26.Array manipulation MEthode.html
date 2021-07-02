@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Array manipulation MEthode</title>
+
+        <script>
+            //create array and try to copy it
+            var fruits = new Array('Mango','Apple','Orange')
+            var newFruits = fruits
+            //in duplicate array added one more item
+            newFruits.push('papaya')
+            //that added item afected original array "fruits"
+            console.log('New Fruits: ',newFruits);
+            console.log('Fruits: ',fruits);
+
+            //when adding item to new array and avoide affecting original array we are using "concat"
+            var moreFruits = fruits.concat()
+            //in moreFruits array addend one more item
+            moreFruits.push('Banana')
+            console.log('Fruits: ',fruits);
+            console.log('More Fruits: ',moreFruits);
+
+            //we can duplicate array with added item as shown below
+            var addedFruits = fruits.concat('kiwi','kova','dates',['black berry','Blue berry'],'strawberry')
+            console.log('Fruits: ',fruits);
+            console.log('Added Fruits: ',addedFruits);
+
+
+            //to split array we can use 'slice' comment
+            //slice(startPosition,endPositon)
+            var FirstthreeFruits = addedFruits.slice(0,3)
+            console.log('slicedFruits   : ',FirstthreeFruits);
+            console.log('Added Fruits: ',addedFruits);
+
+            //using slice comment weneed to get upto end
+            //slice(startPosition) it will doo all the way to end
+            var BalenceFruit = addedFruits.slice(3)
+            console.log('BalenceFruit   : ',BalenceFruit);
+            console.log('Added Fruits: ',addedFruits);
+
+            //to delete "splice" comment
+            //splice(atratPoint,DeleteCount)
+            var removedFruits = addedFruits.splice(0,3)
+            console.log('removedFruits   : ',removedFruits);
+            console.log('Added Fruits: ',addedFruits);
+            //to add
+            //splice(addingPosition,delete should be"zero",item name)
+            var addFruits = addedFruits.splice(0,0,'banana')
+            console.log('addFruits   : ',addFruits);
+            console.log('Added Fruits: ',addedFruits);
+
+            //to replace
+            console.log('Added Fruits: ',addedFruits);
+            //slice(replace positon,no of replace item ,replaced item name)
+            var replaceFruit = addedFruits.splice(3,1,'newfruit')
+            console.log('Added Fruits: ',addedFruits);
+            console.log('replaceFruit   : ',replaceFruit);
+
+
+
+
+        </script>
+    </head>
+    <body>
+        <h1>Array manipulation MEthode</h1>
+
+    </body>
+</html>

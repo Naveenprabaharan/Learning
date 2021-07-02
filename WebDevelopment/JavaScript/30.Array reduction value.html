@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Array reduction value</title>
+        <script>
+            // [1,2,45,64,66].reduce(function(accumulator,currentValue,index,array){
+            //     //statement
+            // },initialvalue)
+
+            //using reduce methode acumulate the array element
+            var numbers = [10,20,30,40,50]
+            var num = numbers.reduce(function(accumulator,currentValue,index){
+                console.log('accumulator : ',accumulator);
+                console.log('Current Value : ',currentValue);
+                console.log('index Value : ',index);
+                return accumulator + currentValue
+            })
+            console.log('accumulator value: ',num)
+
+            //eg:2=>using Reduuce methode nested array convert to array
+
+            var array = [[1,2],[3,4],[5,6]]
+
+            var newArray = array.reduce(function(accumulator,currentValue){
+                return accumulator.concat(currentValue)
+            },[])
+
+            console.log('New array: ',newArray)
+
+            //Eg:3 => using Reduce methode find unique letter in given array
+
+            var letters = ['c','a','t','b','a','t','s','a','t'];
+
+            var uniqueLetters = letters.reduce(function(accumulator,currentValue)
+            {
+                if(accumulator.indexOf(currentValue) === -1)
+                {
+                    accumulator.push(currentValue);
+                }
+                return accumulator;
+            },[])
+
+            console.log('uniqueLetters : ',uniqueLetters)
+        </script>
+    </head>
+    <body>
+        <h1>Array reduction value</h1>
+    </body>
+</html>

@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Array Iteration Methode</title>
+        <script>
+            //Array Iteration Methode
+            //1.foreach => it will not return  anything
+            //Eg:1=>need to say every element name in array
+            var fruits = ['apple','orange','banana','Kiwi']
+
+            fruits.forEach(function(item,index,array){
+                console.log('Inthis Friut Array: '+array);
+                console.log(item+' is position at '+index)
+
+            })
+
+            //2.map => it will return values
+            //Eg:2 =>Calculate discount for array element
+            var priceList = [100,34,76,50,26,45]
+
+
+            var DiscountPricelist = priceList.map(function(price){
+                return (price - (price *10/100))
+            })
+            
+            console.log(DiscountPricelist)
+            //3.Filter it will filter based on our algoritham
+            //Eg:3=>fileter the object who salary is higher then 45000
+
+            var employees = [
+                {
+                    name:'kumar',
+                    designation:'Juni Designer',
+                    salary:25000
+                },
+                {
+                    name:'Nithy',
+                    designation:'Seni Designer',
+                    salary:50000
+                },
+                {
+                    name:'navi',
+                    designation:'Juni Developer',
+                    salary:31000
+                },
+                {
+                    name:'Selva',
+                    designation:'Seni Developer',
+                    salary:78000
+                },
+                {
+                    name:'Thalir',
+                    designation:'Juni DevOPS',
+                    salary:48000
+                },
+                {
+                    name:'kodali',
+                    designation:'Seni DevOPS',
+                    salary:100000
+                }
+            ];
+
+
+            var highPayingJobs = employees.filter(function(employee)
+            {
+                return employee.salary >= 45000
+            });
+
+            console.log(highPayingJobs)
+
+            //4.every => every element need to pass some Condition
+            //eg:4=>chack student got passed or not Based on array element
+
+            function getResult(marklist)
+            {
+                var result = marklist.every(function(mark)
+                {
+                    return mark >= 45
+                })
+                if (result){
+                    console.log('student passed in all subject!');
+                }else{
+                    console.log('it seems you failed in some Subjects!')
+                }
+            }
+
+            getResult([45,67,87,65,90])
+            getResult([34,56,23,87,22])
+
+            //5.some => some element need to pass some Condition
+            //eg:4=>chack student got passed some subject or not Based on array element
+
+            function getResults(marklist)
+            {
+                var result = marklist.some(ispass)
+                    if(result)
+                    {
+                        console.log('student is passed some subject!')
+                    }else{
+                        console.log('student is passed all subject!')
+                    }
+                
+            };
+
+            function ispass(mark){
+                if(mark !== 'pass'){
+                    return mark;
+                }
+            }
+
+            getResults(['pass','fail','pass','fail'])
+            getResults(['pass','pass','pass','pass'])
+        </script>
+    </head>
+    <body style="background-color: aqua;color: brown;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <h1>Array Iteration Methode</h1>
+        <pre>//Array Iteration Methode
+            //1.foreach => it will not return  anything
+            //Eg:1=>need to say every name element in array
+            var fruits = ['apple','orange','banana','Kiwi']
+
+            fruits.forEach(function(item,index,array){
+                console.log('Inthis Friut Array: '+array);
+                console.log(item+' is position at '+index)
+
+            })
+
+            //2.map => it will return values
+            //Eg:2 =>Calculate discount for array element
+            var priceList = [100,34,76,50,26,45]
+
+
+            var DiscountPricelist = priceList.map(function(price){
+                return (price - (price *10/100))
+            })
+            
+            console.log(DiscountPricelist)
+            //3.Filter it will filter based on our algoritham
+            //Eg:3=>fileter the object who salary is higher then 45000
+
+            var employees = [
+                {
+                    name:'kumar',
+                    designation:'Juni Designer',
+                    salary:25000
+                },
+                {
+                    name:'Nithy',
+                    designation:'Seni Designer',
+                    salary:50000
+                },
+                {
+                    name:'navi',
+                    designation:'Juni Developer',
+                    salary:31000
+                },
+                {
+                    name:'Selva',
+                    designation:'Seni Developer',
+                    salary:78000
+                },
+                {
+                    name:'Thalir',
+                    designation:'Juni DevOPS',
+                    salary:48000
+                },
+                {
+                    name:'kodali',
+                    designation:'Seni DevOPS',
+                    salary:100000
+                }
+            ];
+
+
+            var highPayingJobs = employees.filter(function(employee)
+            {
+                return employee.salary >= 45000
+            });
+
+            console.log(highPayingJobs)
+
+            //4.every => every element need to pass some Condition
+            //eg:4=>chack student got passed or not Based on array element
+
+            function getResult(marklist)
+            {
+                var result = marklist.every(function(mark)
+                {
+                    return mark >= 45
+                })
+                if (result){
+                    console.log('student passed in all subject!');
+                }else{
+                    console.log('it seems you failed in some Subjects!')
+                }
+            }
+
+            getResult([45,67,87,65,90])
+            getResult([34,56,23,87,22])
+
+            //5.some => some element need to pass some Condition
+            //eg:4=>chack student got passed some subject Based on array element
+
+            function getResults(marklist)
+            {
+                var result = marklist.some(ispass)
+                    if(result)
+                    {
+                        console.log('student is passed some subject!')
+                    }else{
+                        console.log('student is passed all subject!')
+                    }
+                
+            };
+
+            function ispass(mark){
+                if(mark !== 'pass'){
+                    return mark;
+                }
+            }
+
+            getResults(['pass','fail','pass','fail'])
+            getResults(['pass','pass','pass','pass'])</pre>
+    </body>
+</html>

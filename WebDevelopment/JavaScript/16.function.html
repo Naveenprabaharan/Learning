@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta lang="en-US">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Function</title>
+        <script>
+            function greet()
+            {
+                console.log("welcome");
+            }
+            greet();
+
+            function greet2(message,name)
+            {
+                return "Hello "+name+"! "+message;
+            }
+
+            var mmessage = greet2("how are you?","venkat");
+            console.log(mmessage);
+
+
+            function greet3(message,name)
+            {
+                if(name)
+                {
+                    return "Hello "+name+"! "+message;
+                }
+                else
+                {
+                    return "Message: "+message;
+                }
+            }
+            var result = greet3("how are you?","kumar")
+            console.log(result)
+
+        </script>
+    </head>
+    <body>
+        <h1>Fuction</h1>
+    </body>
+</html>

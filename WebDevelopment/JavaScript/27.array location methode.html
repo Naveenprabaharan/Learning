@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Array location methode</title>
+        <script>
+            //creating array of fruits
+            var availableFruits = ['Apple','Orange','Banana','Strawberry','Blue berry','Black berry']
+            //need fruits name
+            var needFruit = 'Blue berry'
+            //searching using "indexOf" and it will return index position
+            var availablePosition = availableFruits.indexOf(needFruit)
+            console.log(needFruit + ' available at position '+availablePosition)
+
+            //searching un available fruits in array
+            needFruit = 'Potato'
+            availablePosition = availableFruits.indexOf(needFruit)
+            if(availablePosition !== -1)
+            {
+                console.log(needFruit+ ' is available at position '+availablePosition)
+            }else{
+                console.log(needFruit+' is not available')
+            }
+
+            //for example: if i want to buy one fruits in discount price but shopekeeper will sell that fruit is not in top 5 fruits
+            //so checking that we need to check whther that fruit available after 5 fruits because then only shopkeeper will give in Discounted price
+
+            needFruit = 'Black berry'
+            //searchingArray.INDEXOF(searchingItem,starting Index POsition)
+            availablePosition = availableFruits.indexOf(needFruit,5)
+            if(availablePosition !== -1){
+                console.log(needFruit + ' is avaialble in discounted price')
+                console.log(needFruit+' is available at position '+availablePosition)
+            }else{
+                console.log(needFruit+' is not available in discounted price')
+            }
+            
+            //some time we suppoose to search in from last index to do that we can use "lastIndexOf"
+
+            var numbers = [1,2,3,4,5,5,4,3,2,1];
+            var searchNum = 2;
+            availablePosition = numbers.lastIndexOf(searchNum)
+            if(availablePosition !== -1)
+            {
+                console.log(searchNum+ ' is available at position '+availablePosition)
+            }else{
+                console.log(searchNum+' is not available')
+            }
+
+
+            //searching will work in object also
+
+            var designer = {
+                id : 1,
+                name : 'Kumar',
+                designation : 'Designer'
+            }
+
+            var CEO = {
+                id : 2,
+                name : 'Nithy',
+                designation : 'CEO'
+            }
+
+            var SoftwareDeveloper = {
+                id : 3,
+                name : 'Naveen',
+                designation : 'Software Developer'
+            }
+
+
+            var employee = [designer,CEO,SoftwareDeveloper]
+            var search = CEO
+
+            availablePosition = employee.indexOf(search)
+            console.log('CEO position at :',employee.indexOf(search))
+
+        </script>
+    </head>
+    <body>
+        <h1>Array location methode</h1>
+        <pre>
+            --script--
+            //creating array of fruits
+            var availableFruits = ['Apple','Orange','Banana','Strawberry','Blue berry','Black berry']
+            //need fruits name
+            var needFruit = 'Blue berry'
+            //searching using "indexOf" and it will return index position
+            var availablePosition = availableFruits.indexOf(needFruit)
+            console.log(needFruit + ' available at position '+availablePosition)
+
+            //searching un available fruits in array
+            needFruit = 'Potato'
+            availablePosition = availableFruits.indexOf(needFruit)
+            if(availablePosition !== -1)
+            {
+                console.log(needFruit+ ' is available at position '+availablePosition)
+            }else{
+                console.log(needFruit+' is not available')
+            }
+
+            //for example: if i want to buy one fruits in discount price but shopekeeper will sell that fruit is not in top 5 fruits
+            //so checking that we need to check whther that fruit available after 5 fruits because then only shopkeeper will give in Discounted price
+
+            needFruit = 'Black berry'
+            //searchingArray.INDEXOF(searchingItem,starting Index POsition)
+            availablePosition = availableFruits.indexOf(needFruit,5)
+            if(availablePosition !== -1){
+                console.log(needFruit + ' is avaialble in discounted price')
+                console.log(needFruit+' is available at position '+availablePosition)
+            }else{
+                console.log(needFruit+' is not available in discounted price')
+            }
+            
+            //some time we suppoose to search in from last index to do that we can use "lastIndexOf"
+
+            var numbers = [1,2,3,4,5,5,4,3,2,1];
+            var searchNum = 2;
+            availablePosition = numbers.lastIndexOf(searchNum)
+            if(availablePosition !== -1)
+            {
+                console.log(searchNum+ ' is available at position '+availablePosition)
+            }else{
+                console.log(searchNum+' is not available')
+            }
+
+
+            //searching will work in object also
+
+            var designer = {
+                id : 1,
+                name : 'Kumar',
+                designation : 'Designer'
+            }
+
+            var CEO = {
+                id : 2,
+                name : 'Nithy',
+                designation : 'CEO'
+            }
+
+            var SoftwareDeveloper = {
+                id : 3,
+                name : 'Naveen',
+                designation : 'Software Developer'
+            }
+
+
+            var employee = [designer,CEO,SoftwareDeveloper]
+            var search = CEO
+
+            availablePosition = employee.indexOf(search)
+            console.log('CEO position at :',employee.indexOf(search))
+
+        --script--
+        </pre>
+    </body>
+</html>

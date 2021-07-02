@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>object type</title>
+        <script>
+            var user1 ={
+                name : "naven",
+                profession : "ML Developer",
+                sayHi:function()
+                {
+                    console.log("hello! ",this.name)
+                }
+            }
+
+            var user2 = user1;
+
+            user1.sayHi();
+            user1=null
+            user2.sayHi();
+            
+            //adding variable with spaces by using "[]""
+            user2['first name']='some name';
+            console.log(user2)
+
+            //display through for in loop
+            for (prop in user2)
+            {
+                console.log(user2[prop])
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>object type</h1>
+    </body>
+</html>

@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Function Type</title>
+
+
+        <script>
+            //create function in constructor methode
+
+            var addTwo = new Function('num1','num2','return num1 + num2');
+            console.log(addTwo(4,5))
+
+            //create function in Literal methode
+            function sum(num1,num2)
+            {
+                return num1+num2;
+            }
+            console.log(sum(5,9))
+
+            //copy function to another variable and original sum going to be null
+
+            var newsum = sum;
+            sum = null;
+            console.log(newsum(3,4))
+            //console.log(sum(3,4)) -- it will ssay type error
+
+            //call some function throgh function
+            //function passed as value to another function
+
+            function callSomeFunction(fun,param) {
+                return fun(param);
+            }
+
+            callSomeFunction(alert,'this is call function');
+
+
+            //function expression is function stored in one variable its called function expression
+
+            var doubleIt = function(num){
+                return num*2;
+            }
+
+            console.log(doubleIt(4))
+
+
+            //excess parameter & no parameter
+            
+            console.log('excess parameter',doubleIt(4,3,4,5))//return answer for first value other doesn''t consider'
+            console.log('no parameter',doubleIt())//retrun as NaN - Not a Number
+
+            //to avoide this type error 
+
+            var sum = function()
+            {
+                //converting input as array by "Array.from(arguments)"
+                return Array.from(arguments).reduce(function(accumulator,currentValue)
+                {
+                    return accumulator + currentValue;
+                });
+            };
+            console.log('excess parameter',sum(4,3,4,5))
+
+
+
+            //to find factorial;
+
+            function factorial(num)
+            {
+                if (num <=1)
+                {
+                    return num;
+                }else{
+                    return num * factorial(num-1);
+                }
+            }
+
+            console.log('factoraial of 5',factorial(5))
+
+            //copy factorial function to another function 
+            var newFactorial = factorial
+            //factorial = null
+            console.log('factoraial of 5',newFactorial(5))//it will say error because in our original function 
+            //we have call 'return num * "factorial"(num-1);' inthis factorial become null so now this function is not working
+
+            //to avoide that type type of referene error now we are using "calle" methode 
+            function factorial(num)
+            {
+                if (num <=1)
+                {
+                    return num;
+                }else{
+                    return num * arguments.callee(num-1);
+                }
+            }
+            console.log('factoraial of 5',factorial(5))
+
+            //copy factorial function to another function 
+            var newFactorial = factorial
+            factorial = null
+            console.log('factoraial of 5',newFactorial(5))// reference error got eliminated
+
+
+
+            //IIFE =>Imediate Invoked Function Expression(self executing ananyoms function)
+            // in thsis IIFE it tempory function we can't reuse it .
+
+            // (function sayName(name)//iife with name
+            // {
+            //     console.log(name);
+            // }
+            // )('javascript')
+            
+            // (function() {
+            //     //var name1 = 'venket';
+            //     console.log(name1);
+            // })();
+            // console.log(name1)
+
+
+        </script>
+    </head>
+    <body>
+        <h1>Function Type</h1>
+
+        <pre>
+            //create function in constructor methode
+
+            var addTwo = new Function('num1','num2','return num1 + num2');
+            console.log(addTwo(4,5))
+
+            //create function in Literal methode
+            function sum(num1,num2)
+            {
+                return num1+num2;
+            }
+            console.log(sum(5,9))
+
+            //copy function to another variable and original sum going to be null
+
+            var newsum = sum;
+            sum = null;
+            console.log(newsum(3,4))
+            //console.log(sum(3,4)) -- it will ssay type error
+
+            //call some function throgh function
+            //function passed as value to another function
+
+            function callSomeFunction(fun,param) {
+                return fun(param);
+            }
+
+            callSomeFunction(alert,'this is call function');
+
+
+            //function expression is function stored in one variable its called function expression
+
+            var doubleIt = function(num){
+                return num*2;
+            }
+
+            console.log(doubleIt(4))
+
+
+            //excess parameter & no parameter
+            
+            console.log('excess parameter',doubleIt(4,3,4,5))//return answer for first value other doesn''t consider'
+            console.log('no parameter',doubleIt())//retrun as NaN - Not a Number
+
+            //to avoide this type error 
+
+            var sum = function()
+            {
+                //converting input as array by "Array.from(arguments)"
+                return Array.from(arguments).reduce(function(accumulator,currentValue)
+                {
+                    return accumulator + currentValue;
+                });
+            };
+            console.log('excess parameter',sum(4,3,4,5))
+
+
+
+            //to find factorial;
+
+            function factorial(num)
+            {
+                if (num <=1)
+                {
+                    return num;
+                }else{
+                    return num * factorial(num-1);
+                }
+            }
+
+            console.log('factoraial of 5',factorial(5))
+
+            //copy factorial function to another function 
+            var newFactorial = factorial
+            //factorial = null
+            console.log('factoraial of 5',newFactorial(5))//it will say error because in our original function 
+            //we have call 'return num * "factorial"(num-1);' inthis factorial become null so now this function is not working
+
+            //to avoide that type type of referene error now we are using "calle" methode 
+            function factorial(num)
+            {
+                if (num <=1)
+                {
+                    return num;
+                }else{
+                    return num * arguments.callee(num-1);
+                }
+            }
+            console.log('factoraial of 5',factorial(5))
+
+            //copy factorial function to another function 
+            var newFactorial = factorial
+            factorial = null
+            console.log('factoraial of 5',newFactorial(5))// reference error got eliminated
+
+
+
+            //IIFE =>Imediate Invoked Function Expression(self executing ananyoms function)
+            // in thsis IIFE it tempory function we can't reuse it .
+
+            // (function sayName(name)//iife with name
+            // {
+            //     console.log(name);
+            // }
+            // )('javascript')
+            
+            // (function() {
+            //     //var name1 = 'venket';
+            //     console.log(name1);
+            // })();
+            // console.log(name1)
+        </pre>
+    </body>
+</html>
