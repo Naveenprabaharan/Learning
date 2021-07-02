@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact form</title>
+</head>
+<body>
+	<h1>Cotact form</h1>
+	<form method="GET">
+		<p>
+			Name:<br>
+			<input type="text" name="name"><br>
+		</p>
+		<p>
+			Email: <br>
+			<input type="text" name="email">
+		</p>
+		<p>
+			You want to learn:<br>
+			<input type="radio" name="learn_type" value="html" checked>HTML
+			<input type="radio" name="learn_type" value="css">CSS
+			<input type="radio" name="learn_type" value="javascript">javascript
+		</p>
+		<p>
+			Enter Your Hobbies:<br>
+			<input type="checkbox" name="Hobbies[]" value="criket">criket
+			<input type="checkbox" name="Hobbies[]" value="Book_eading">Book_eading
+			<input type="checkbox" name="Hobbies[]" value="Skying">Skying
+			<input type="checkbox" name="Hobbies[]" value="Trucking">Trucking
+			<input type="checkbox" name="Hobbies[]" value="Dancing">Dancing
+			<input type="checkbox" name="Hobbies[]" value="Singing">Singing
+			<input type="checkbox" name="Hobbies[]" value="eating">eating
+
+	 	</p>
+	 	
+	 	<p>
+	 		Select your starting Date:<br>
+	 		<select name="date" id="dob">
+	 			<option value="">select date</option>
+	 			<option value="1">1</option>
+	 			<option value="2">2</option>
+	 			<option value="3">3</option>
+	 			<option value="4">4</option>
+	 			<option value="5">5</option>
+	 			<option value="6" selected>6</option>
+	 			<option value="7">7</option>
+	 			<option value="8">8</option>
+	 			<option value="9">9</option>
+	 			<option value="10">10</option>
+	 			<option value="11">11</option>
+	 		</select>
+	 	</p>
+
+		<p>
+			Subject:<br>
+			<input type="text" name="msg">
+		</p>
+		<p>
+		Message:<br>	
+		<textarea name="comment" cols="25" rows="5" placeholder="Enter your message..."></textarea>
+		</p>
+		<p>
+			<input type="submit" value="Send Message" name="send message">
+		</p>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email and Number Field</title>
+</head>
+<body>
+	<h1>Email and Number Field</h1>
+	<form method="POST">
+		<p>
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name">
+		</p>
+
+		<p>
+			<label for="email_id">Email Id:</label>
+			<input type="email" name="email_id" id="email_id" required>
+		</p>
+
+		<p>
+			<label for="age">Age:</label>
+			<input type="Number" name="age" id="age" required min="18" max="75">
+		</p>
+
+		<p>
+			<input type="submit" name="send_data" value="submit">
+		</p>
+
+	</form>
+</body>
+</html>

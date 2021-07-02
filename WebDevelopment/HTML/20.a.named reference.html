@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>20. Named Reference</title>
+</head>
+<body>
+	<h1 id="top">Named reference</h1>
+	<p>
+		<h2><a href="#ins">Instructor Support</a></h2>
+		<h2><a href="#Acknowledgments">Acknowledgments</a></h2>
+		<h2><a href="#Manghui Tu">Manghui Tu</a></h2>
+		<h2><a href="#xxiv Preface">xxiv Preface</a></h2>
+	</p>
+
+	<p>
+		<h2 id="ins">Instructor Support</h2>
+We have collected a great deal of material to help instructors teach courses using
+this book. Solutions to exercises, figures from the book, lecture slides, and other
+materials are available to instructors who register with the publisher. In addition,
+the companion Web site provides links to a free Community Edition of ARM DS-5
+professional software suite which contains an ARMv8-A (64-bit) architecture
+simulator, as well as additional advanced content for further study, appendices,
+glossary, references, and recommended reading. Check the publisher’s Web site for
+more information:
+textbooks.elsevier.com/9780128017333
+Concluding Remarks
+If you read the following acknowledgments section, you will see that we went to
+great lengths to correct mistakes. Since a book goes through many printings, we
+have the opportunity to make even more corrections. If you uncover any remaining,
+resilient bugs, please contact the publisher by electronic mail at codARMbugs@
+mkp.com or by low-tech mail using the address found on the copyright page.
+This edition is the third break in the long-standing collaboration between
+Hennessy and Patterson, which started in 1989. The demands of running one of
+the world’s great universities meant that President Hennessy could no longer make
+the substantial commitment to create a new edition. The remaining author felt
+once again like a tightrope walker without a safety net. Hence, the people in the
+acknowledgments and Berkeley colleagues played an even larger role in shaping
+the contents of this book. Nevertheless, this time around there is only one author
+to blame for the new material in what you are about to read.
+<p><a href="#top">back to top</a></p>
+<h2 id="Acknowledgments">Acknowledgments</h2>
+With every edition of this book, we are very fortunate to receive help from many
+readers, reviewers, and contributors. Each of these people has helped to make this
+book better.
+We are grateful for the assistance of Khaled Benkrid and his colleagues at
+ARM Ltd., who carefully reviewed the ARM-related material and provided helpful
+feedback.
+xxii Preface
+Chapter 6 was so extensively revised that we did a separate review for ideas and
+contents, and I made changes based on the feedback from every reviewer. I’d like to
+thank Christos Kozyrakis of Stanford University for suggesting using the network
+interface for clusters to demonstrate the hardware–software interface of I/O and
+for suggestions on organizing the rest of the chapter; Mario Flagsilk of Stanford
+University for providing details, diagrams, and performance measurements of the
+NetFPGA NIC; and the following for suggestions on how to improve the chapter:
+David Kaeli of Northeastern University, Partha Ranganathan of HP Labs,
+David Wood of the University of Wisconsin, and my Berkeley colleagues Siamak
+Faridani, Shoaib Kamil, Yunsup Lee, Zhangxi Tan, and Andrew Waterman.
+Special thanks goes to Rimas Avizenis of UC Berkeley, who developed the
+various versions of matrix multiply and supplied the performance numbers as well.
+As I worked with his father while I was a graduate student at UCLA, it was a nice
+symmetry to work with Rimas at UCB.<br>
+I also wish to thank my longtime collaborator Randy Katz of UC Berkeley, who
+helped develop the concept of great ideas in computer architecture as part of the
+extensive revision of an undergraduate class that we did together.
+I’d like to thank David Kirk, John Nickolls, and their colleagues at NVIDIA
+(Michael Garland, John Montrym, Doug Voorhies, Lars Nyland, Erik Lindholm,<br>
+<p><a href="#top">back to top</a></p>
+Paulius Micikevicius, Massimiliano Fatica, Stuart Oberman, and Vasily Volkov)
+for writing the first in-depth appendix on GPUs. I’d like to express again my
+appreciation to Jim Larus, recently named Dean of the School of Computer and
+Communications Science at EPFL, for his willingness in contributing his expertise
+on assembly language programming, as well as for welcoming readers of this book
+with regard to using the simulator he developed and maintains.
+I am also very grateful to Zachary Kurmas of Grand Valley State University,
+who updated and created new exercises, based on originals created by Perry
+Alexander (The University of Kansas); Jason Bakos (University of South Carolina);
+Javier Bruguera (Universidade de Santiago de Compostela); Matthew Farrens
+(University of California, Davis); David Kaeli (Northeastern University); Nicole
+Kaiyan (University of Adelaide); John Oliver (Cal Poly, San Luis Obispo); Milos
+Prvulovic (Georgia Tech); Jichuan Chang (Google); Jacob Leverich (Stanford);
+Kevin Lim (Hewlett-Packard); and Partha Ranganathan (Google).
+Additional thanks goes to Jason Bakos for updating the lecture slides.
+I am grateful to the many instructors who have answered the publisher’s
+surveys, reviewed our proposals, and attended focus groups to analyze and
+respond to our plans for this edition. They include the following individuals:
+Focus Groups: Bruce Barton (Suffolk County Community College), Jeff Braun
+(Montana Tech), Ed Gehringer (North Carolina State), Michael Goldweber
+(Xavier University), Ed Harcourt (St. Lawrence University), Mark Hill (University
+of Wisconsin, Madison), Patrick Homer (University of Arizona), Norm Jouppi
+(HP Labs), Dave Kaeli (Northeastern University), Christos Kozyrakis (Stanford
+University), Jae C. Oh (Syracuse University), Lu Peng (LSU), Milos Prvulovic
+(Georgia Tech), Partha Ranganathan (HP Labs), David Wood (University of
+Wisconsin), Craig Zilles (University of Illinois at Urbana-Champaign). Surveys 
+Preface xxiii
+and Reviews: Mahmoud Abou-Nasr (Wayne State University), Perry Alexander
+(The University of Kansas), Behnam Arad (Sacramento State University),
+Hakan Aydin (George Mason University), Hussein Badr (State University of
+New York at Stony Brook), Mac Baker (Virginia Military Institute), Ron Barnes
+(George Mason University), Douglas Blough (Georgia Institute of Technology),
+Kevin Bolding (Seattle Pacific University), Miodrag Bolic (University of Ottawa),
+John Bonomo (Westminster College), Jeff Braun (Montana Tech), Tom Briggs
+(Shippensburg University), Mike Bright (Grove City College), Scott Burgess
+(Humboldt State University), Fazli Can (Bilkent University), Warren R. Carithers
+(Rochester Institute of Technology), Bruce Carlton (Mesa Community College),
+Nicholas Carter (University of Illinois at Urbana-Champaign), Anthony Cocchi
+(The City University of New York), Don Cooley (Utah State University), Gene
+Cooperman (Northeastern University), Robert D. Cupper (Allegheny College),
+Amy Csizmar Dalal (Carleton College), Daniel Dalle (Université de Sherbrooke),
+Edward W. Davis (North Carolina State University), Nathaniel J. Davis (Air Force
+Institute of Technology), Molisa Derk (Oklahoma City University), Andrea Di
+Blas (Stanford University), Derek Eager (University of Saskatchewan), Ata Elahi
+(Souther Connecticut State University), Ernest Ferguson (Northwest Missouri
+State University), Rhonda Kay Gaede (The University of Alabama), Etienne M.
+Gagnon (L’Université du Québec à Montréal), Costa Gerousis (Christopher
+Newport University), Paul Gillard (Memorial University of Newfoundland),
+Michael Goldweber (Xavier University), Georgia Grant (College of San Mateo),
+Paul V. Gratz (Texas A&M University), Merrill Hall (The Master’s College), Tyson
+Hall (Southern Adventist University), Ed Harcourt (St. Lawrence University),
+Justin E. Harlow (University of South Florida), Paul F. Hemler (HampdenSydney College), <br>
+Jayantha Herath (St. Cloud State University), Martin Herbordt
+(Boston University), Steve J. Hodges (Cabrillo College), Kenneth Hopkinson
+(Cornell University), Bill Hsu (San Francisco State University), Dalton Hunkins
+(St. Bonaventure University), Baback Izadi (State University of New York—New
+Paltz), Reza Jafari, Robert W. Johnson (Colorado Technical University), Bharat
+Joshi (University of North Carolina, Charlotte), Nagarajan Kandasamy (Drexel
+University), Rajiv Kapadia, Ryan Kastner (University of California, Santa Barbara),
+E.J. Kim (Texas A&M University), Jihong Kim (Seoul National University), Jim
+Kirk (Union University), Geoffrey S. Knauth (Lycoming College), Manish M.
+Kochhal (Wayne State), Suzan Koknar-Tezel (Saint Joseph’s University), Angkul
+Kongmunvattana (Columbus State University), April Kontostathis (Ursinus
+College), Christos Kozyrakis (Stanford University), Danny Krizanc (Wesleyan
+University), Ashok Kumar, S. Kumar (The University of Texas), Zachary Kurmas
+(Grand Valley State University), Adrian Lauf (University of Louisville), Robert
+N. Lea (University of Houston), Alvin Lebeck (Duke University), Baoxin Li
+(Arizona State University), Li Liao (University of Delaware), Gary Livingston
+(University of Massachusetts), Michael Lyle, Douglas W. Lynn (Oregon
+Institute of Technology), Yashwant K Malaiya (Colorado State University),
+Stephen Mann (University of Waterloo), Bill Mark (University of Texas at
+Austin), Ananda Mondal (Claflin University), Alvin Moser (Seattle University), 
+<p><a href="#top">back to top</a></p>
+<h2 id="xxiv Preface">xxiv Preface</h2>
+Walid Najjar (University of California, Riverside), Vijaykrishnan Narayanan
+(Penn State University), Danial J. Neebel (Loras College), Victor Nelson (Auburn
+University), John Nestor (Lafayette College), Jae C. Oh (Syracuse University),
+Joe Oldham (Centre College), Timour Paltashev, James Parkerson (University of
+Arkansas), Shaunak Pawagi (SUNY at Stony Brook), Steve Pearce, Ted Pedersen
+(University of Minnesota), Lu Peng (Louisiana State University), Gregory D.
+Peterson (The University of Tennessee), William Pierce (Hood College), Milos
+Prvulovic (Georgia Tech), Partha Ranganathan (HP Labs), Dejan Raskovic
+(University of Alaska, Fairbanks) Brad Richards (University of Puget Sound),
+Roman Rozanov, Louis Rubinfield (Villanova University), Md Abdus Salam
+(Southern University), Augustine Samba (Kent State University), Robert Schaefer
+(Daniel Webster College), Carolyn J. C. Schauble (Colorado State University),
+Keith Schubert (CSU San Bernardino), William L. Schultz, Kelly Shaw (University
+of Richmond), Shahram Shirani (McMaster University), Scott Sigman (Drury
+University), Shai Simonson (Stonehill College), Bruce Smith, David Smith, Jeff W.
+Smith (University of Georgia, Athens), Mark Smotherman (Clemson University),
+Philip Snyder (Johns Hopkins University), Alex Sprintson (Texas A&M), Timothy
+D. Stanley (Brigham Young University), Dean Stevens (Morningside College),
+Nozar Tabrizi (Kettering University), Yuval Tamir (UCLA), Alexander Taubin
+(Boston University), Will Thacker (Winthrop University), Mithuna Thottethodi
+(Purdue University), <br>
+<p><a href="#top">back to top</a></p>
+<h2 id="Manghui Tu">Manghui Tu</h2>
+ (Southern Utah University), Dean Tullsen (UC
+San Diego), Steve VanderLeest (Calvin College), Christopher Vickery (Queens
+College of CUNY), Rama Viswanathan (Beloit College), Ken Vollmar (Missouri
+State University), Guoping Wang (Indiana-Purdue University), Patricia Wenner
+(Bucknell University), Kent Wilken (University of California, Davis), David
+Wolfe (Gustavus Adolphus College), David Wood (University of Wisconsin,
+Madison), Ki Hwan Yum (University of Texas, San Antonio), Mohamed Zahran
+(City College of New York), Amr Zaky (Santa Clara University), Gerald D.
+Zarnett (Ryerson University), Nian Zhang (South Dakota School of Mines &
+Technology), Jiling Zhong (Troy University), Huiyang Zhou (North Carolina
+State University), Weiyu Zhu (Illinois Wesleyan University).
+A special thanks also goes to Mark Smotherman for making multiple passes to
+find technical and writing glitches that significantly improved the quality of this
+edition.
+<p><a href="#top">back to top</a></p>
+	</p>
+
+</body>
+</html>

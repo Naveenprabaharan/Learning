@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculation</title>
+	<style >
+		span
+		{
+			color:yellow;
+		}
+		
+		.va{
+			color:pink;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<fieldset>
+				<legend class="va">User data</legend>
+				<label for="C_name">Custommer name:</label><br>
+				<input type="text" name="C_name" id="C_name"><br>
+				<label for="C_id">Custommer ID:</label><br>
+				<input type="text" name="C_id" id="C_id"><br>
+				<label for="C_phn">Custommer Phone Number:</label><br>
+				<input type="text" name="C_phn" id="C_phn"><br>
+			</fieldset>
+	
+				
+				<fieldset>
+					<form oninput="bal_tomo.value=parseInt(avail_tomo.value)-parseInt(need_tomo.value)">
+						<label>Avilable tommoto</label><br>
+						<input type="range" id="avail_tomo" value="50"><br>
+						<label>Need tommoto:</label><br>
+						<input type="number" id="need_tomo" value="22" min="0" max="100"><br>
+						=<output name="bal_tomo" for="avail_tomo need_tomo"></output>
+					</form>
+				</fieldset>
+				<fieldset>
+					<legend>tommoto</legend>
+					<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+						<input type="range" id="a" value="50">
+						<input type="number" id="b" value="20">
+						=<output name="x" for="a b"></output>
+					</form>
+				</fieldset>
+				<fieldset>
+					<legend>Carrot</legend>
+					<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+						<input type="range" id="a" value="50">
+						<input type="number" id="b" value="20">
+						<output name="x" for="a b"></output>
+					</form>
+				</fieldset>
+		</fieldset>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple choose option in dropdown menu</title>
+</head>
+<body  text="red" bgcolor="pink">
+	<h1>Multiple choose option in dropdown menu</h1>
+	<p>
+		Name:<br>
+		<input type="text" name="name">
+	</p>
+
+	<p>
+		Mail_id:<br>
+		<input type="text" name="mail_id">
+	</p>
+
+	<p>
+		Select Your DOB:<br>
+		<select name="DD" id="date">
+			<option value="">select date</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>	
+
+		<select name="MM" >
+			<option value="">select Month</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+
+		<select name="yyyy" id="dob">
+			<option value="">select year</option>
+			<option value="2001" selected="">2001</option>
+			<option value="2002">2002</option>
+			<option value="2003">2003</option>
+			<option value="2004">2004</option>
+			<option value="2005">2005</option>
+			<option value="2006">2006</option>
+			<option value="2007">2007</option>
+			<option value="2008">2008</option>
+			<option value="2009">2009</option>
+			<option value="2010">2010</option>
+		</select>
+	</p>
+
+	<p>
+		Select Your Hobbie:<br>
+		<input type="checkbox" name="hobbie[]" value="playing">playing
+		<input type="checkbox" name="hobbie[]" value="singing">singing
+		<input type="checkbox" name="hobbie[]" value="Dancing">Dancing
+		<input type="checkbox" name="hobbie[]" value="Driving">Driving
+		<input type="checkbox" name="hobbie[]" value="skying">skying
+		<input type="checkbox" name="hobbie[]" value="reading">reading
+		<input type="checkbox" name="hobbie[]" value="sleeping">sleeping
+		<input type="checkbox" name="hobbie[]" value="swimming">swimming
+	</p>
+
+	<p>
+		First you Want learn:<br>
+		<input type="radio" name="learn_course" value="HTML" checked="">HTML
+		<input type="radio" name="learn_course" value="CSS">CSS		
+		<input type="radio" name="learn_course" value="JS">JS		
+		<input type="radio" name="learn_course" value="PHP">PHP
+	</p>
+
+	<p>
+		Available Time:<br>
+		<select name="avail_time" multiple size="6">
+			<option value="Mrng">Mrng</option>
+			<option value="Afternoon">Afternoon</option>
+			<option value="Evening">Evening</option>
+			<option value="Saterday">Saterday</option>s
+			<option value="Sunday">Sunday</option>
+			<option value="Mrng">Mrng</option>
+			<option value="Afternoon">Afternoon</option>
+			<option value="Evening">Evening</option>
+			<option value="Saterday">Saterday</option>s
+			<option value="Sunday">Sunday</option><option value="Mrng">Mrng</option>
+			<option value="Afternoon">Afternoon</option>
+			<option value="Evening">Evening</option>
+			<option value="Saterday">Saterday</option>s
+			<option value="Sunday">Sunday</option>
+		</select>
+	</p>
+
+	<p>
+		<textarea name="comment" cols="25" rows="5" placeholder="comment..."></textarea>
+	</p>
+	<p>
+	<input type="Submit" name="send_button" value="Submit">
+	</p>
+	
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>map image</title>
+        <style>
+            /* body{
+                background-image: url('cs.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-attachment: scroll;
+            } */
+        </style>
+
+    </head>
+    <body>
+
+        <h1>This is image tag</h1>
+        <button type="button" onclick="document.getElementById('id').innerHTML=Date()">click me</button>
+
+        <p id="id"></p>
+        <!-- <img src="cs.png" alt="cs iage" usemap="#name" width="600" height="400">
+        <map name="name">
+            <area shape="rect" coords="0,0,200,400" href="cs.png" alt="">
+        </map> -->
+
+        <picture>
+            <source media="(max-width:1200px" srcset="cs.png">
+            <source media="(min-width:400px" srcset="cs.png">
+            <img src="cs.png" alt="cspng image">
+        </picture>
+
+        <iframe src="30.table HTML.html" frameborder="1" height="500px" width="1000px"></iframe>
+    </body>
+</html>
