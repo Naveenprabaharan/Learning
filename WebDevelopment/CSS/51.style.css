@@ -1,0 +1,27 @@
+.page{
+		width: 90%;
+		margin:0 auto;
+		min-width: 550px;
+	}
+
+	.main{
+		background-color: greenyellow;
+	}
+
+	.left{
+		width: 20%;
+		float: left;
+	}	
+	.mainbar{
+		width: 50%;
+		float: left;
+		margin-left: 35px;
+	}
+	.sidebar{
+		width: 20%;
+		float: right;
+	}
+
+	.clear{
+		clear: both;
+	}

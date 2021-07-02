@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>32.Box Radius</title>
+
+	<style type="text/css">
+		body{
+			background-color: black;
+			color: white;
+			/*background-image: : cs.png;*/
+		}
+
+		div{
+			height: 50px;
+			width: 100px;
+			padding: 20px;
+			border: 1px solid red;
+			margin: 20px auto;
+			text-align: center;
+			line-height: 50px;
+
+		}
+
+		#topleft{
+			box-shadow: -5px -5px yellow;
+			border-radius: 5px;
+		}
+
+		#bottomRight{
+			box-shadow: 5px 5px 5px greenyellow;
+			/*(left or right)	(top/bottom) (blur)*/
+			border-radius: 10px 0px;
+		}
+
+		#spread{
+			box-shadow: 5px 5px 5px 10px gray;
+			/*(left or right)	(top/bottom) (blur) (spread)*/
+			border-top-left-radius: 20px;
+			border-bottom-right-radius:20px; 
+		}
+
+		#outer{
+			box-shadow: 0px 0px 5px green;
+			/*(left or right)	(top/bottom) (spread)*/
+			border-radius: 25px;
+		}
+
+		#inner{
+			box-shadow: inset 0px 0px 5px 5px green;
+			/*(left or right)	(top/bottom) (blur) (spread)*/
+			border-radius: 45px;	
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>Box Radius</h1>
+	<div id="topleft">topleft</div>
+	<div id="bottomRight">bottomRight</div>
+	<div id="spread">spread</div>
+	<div id="outer">outer</div>
+	<div id="inner">inner</div>
+</body>
+</html>

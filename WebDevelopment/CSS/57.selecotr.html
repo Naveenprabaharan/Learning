@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>57.selector element</title>
+
+	<style type="text/css">
+		/*universal selector
+		*{
+			color: crimson;
+		}*/
+
+		/*adjecent selector
+		h1 + p{
+			color: blue;
+		}*/
+
+		/*sibiling selector*/
+		/*h1 ~ p{
+			color: pink;
+		}*/
+		
+		/*decent all childeren will have this property
+		li a{
+			text-decoration: none;
+		}*/
+
+
+		/*childern*/
+		#nav > li > a
+		{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+<!-- 
+	<h1>this is heading</h1>
+	<p>paragraph</p>
+		<div id="gparent">
+		<h1>This is grand parent</h1>
+		<p>this is adjectent paragrapg</p>
+		<h2>sibiling of This is grand parent</h2>
+		<div id="parent">
+			<div id="children">
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<ul>
+						<li><a href="#">qwe</a></li>
+						<li><a href="#">asdd</a></li>
+						<li><a href="#">asdd</a></li>
+						<li><a href="#">fds</a></li>
+					</ul>
+					<li><a href="#">vision</a></li>
+					<li><a href="#">mission</a></li>
+		
+					</ul>
+				<h1>childern</h1>
+				<p>this is adjectent paragrapg</p>
+				<p>this is too para</p>
+				<div id="grandchildren">
+					<h1>the grand children</h1>
+					<div>
+						<h1>the great grand children</h1>
+						<p>this is adjectent paragrapg</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	 -->
+	<p>paragrpapgh</p>
+	<div id="children">
+		<ul id="nav">
+			<li><a href="#">home</a></li>
+			<li><a href="#">about</a></li>
+			<ul>
+				<li><a href="#">qwe</a></li>
+				<li><a href="#">asdd</a></li>
+				<li><a href="#">asdd</a></li>
+				<li><a href="#">fds</a></li>
+			</ul>
+			<li><a href="#">vision</a></li>
+			<li><a href="#">mission</a></li>
+
+		</ul>
+		</div>
+				
+</body>
+</html>

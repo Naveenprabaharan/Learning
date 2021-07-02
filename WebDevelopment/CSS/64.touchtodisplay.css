@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+.wrapper{
+    width: 900px;
+    margin: o auto;
+}
+.clear{
+    clear: both;
+}
+
+.wrapper ul{
+    list-style: none;
+    margin-top: 2%;
+}
+
+.wrapper ul li{
+    width: 170px;
+    height: 50px;
+    float: left;
+    border:1px solid #fff;
+    background: #262626;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}  
+
+.wrapper ul li:hover{
+    background-color: crimson;
+}
+.wrapper ul ul{
+    display: none;
+}
+
+.wrapper ul li:hover > ul{
+    display: block;
+}
+
+.wrapper ul ul ul{
+    margin-left: 170px;
+    top: 0;
+    position: absolute;
+    /* display: none ; */
+}

@@ -1,0 +1,33 @@
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+#div{
+    height: 300px;
+    width: 300px;
+    background-color: lightsteelblue;
+    /* transition-property: background-color;
+    transition-duration: 2000ms ; */
+    transition: background-color 3s ease-in,border-radius 3s ease-in;
+    line-height:300px;
+}
+
+#div:hover{
+    background-color: coral;
+    border-radius: 150px;
+}
+
+#div1{
+    height: 300px;
+    width: 300px;
+    background-color: lightsteelblue;
+    /* transition-property: background-color;
+    transition-duration: 2000ms ; */
+    transition: background-color 3s ease-out,border-radius 3s ease-out ;
+    line-height:300px;
+}
+
+#div1:hover{
+    background-color: lightpink;
+    border-radius: 150px;
+}

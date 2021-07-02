@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS typography</title>
+	<style type="text/css">
+		body{
+			font-size: 1em;
+			font-style: normal;
+			font-family: sans-serif,serif,normal;
+		}
+		a:link{
+			color: red;
+		}
+		a:visitd{
+			color: black;
+		}
+		a:hover{
+			color: blue;
+		}
+		a:active{
+			color:pink;
+		}
+		a:focus{
+			color: gray;
+		}
+		#form:focus{
+			color: pink;
+		}
+		#submit:focus{
+			color: pink;
+		}
+	</style>
+</head>
+<body>
+	<h1>19.pesudo class</h1>
+	<p>this is <a href="#">youtube</a> this is hosted by <a href="#">google</a> and they are providing <a href="#">photos</a>
+		and <a href="#">google drive serivices tooo</a></p>
+		<hr>
+		<form class="form">
+			<label for="email">Email:</label>
+			<input type="text" name="email" form="email" id="email">
+			<input type="submit" name="send" value="send" id="submit">
+		</form>
+</body>
+</html>
