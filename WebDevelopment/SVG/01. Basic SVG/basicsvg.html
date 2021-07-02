@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> SVG | Basics </title>
+
+</head>
+<body>
+
+  <!-- 01.HTML in SVG -->
+  <h1>SVG Shapes</h1>
+  <h2>HTML</h2>
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="2" fill="pink"
+  </svg>
+<br>
+<br>
+<br>
+  <!-- 02.Rectangle -->
+  <h2>01.RECTANGLE</h2>
+  <svg height="200" width="400">
+    <rect width="300" height="100" style="fill:red;stroke:black;stroke-width:4"/>
+  </svg>
+<br>
+<br>
+<br>
+
+  <!-- 03. CICLE -->
+  <h2>02. CIRCLE </h2>
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" fill="black" stroke="blue" stroke-width="4" />
+  </svg>
+  <br>
+  <br>
+  <br>
+
+  <!-- 04. Ellipse -->
+  <h2>04.Ellipse</h2>
+  <svg width="400" height="150">
+    <ellipse cx="200" cy="70" rx="180" ry="60" style="fill:black;stroke-width:4;stroke:blue"/>
+  </svg>
+  <br>
+  <br>
+  <br>
+
+  <!-- 05. Line -->
+  <h2>05.Line</h2>
+  <svg width="400" height="150">
+    <line x1="0" y1="0" x2="200" y2="0" style="stroke-width:8;stroke:blue"/>
+  </svg>
+  <br>
+  <br>
+  <br>
+
+  <!-- 06. polygon -->
+  <h2>06.polygon</h2>
+  <svg width="400" height="150">
+    <polygon points="200 0, 250 140, 160 100" style="stroke-width:8;stroke:blue"/>
+  </svg>
+
+  <br>
+
+  <svg height="210" width="500">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;" />
+</svg>
+  <br>
+  <br>
+
+  <!-- 07. polyline -->
+  <h2>07. polyline</h2>
+  <svg width="400" height="400">
+    <polyline points="20,20 40,25 60,40 80,120 120,140 200,180 " style="fill:none;stroke-width:2;stroke:blue"/>
+  </svg>
+  <br>
+  <br>
+  <br>
+
+
+  <!-- 08. path -->
+  <h2>07. path</h2>
+  <svg width="400" height="400">
+    <path id="AB line" d="M 50 350 L 200 10" fill:"none" stroke="black" stroke-width="4"/>
+    <path id="BC line" d="M 200 10 L 300 350" fill="none" stroke="black" stroke-width="4"/>
+    <path id="AB centreline" d="M 117 200 L 257 200" fill="none" stroke="black" stroke-width="4"/>
+    <path id="curve" d="M 50 350 Q 190 50 300 350" fill="none" stroke="red" stroke-width="4"/>
+  </svg>
+  <br>
+  <br>
+  <br>
+
+
+  <!-- 09. Text -->
+  <h2>09. Text</h2>
+  <svg width="400" height="400">
+    <text x="0" y="200" fill="blue">SVGRocks</text>
+  </svg>
+  <br>
+  <svg height="60" width="400">
+    <path id="AB line" d="M 0 0 L 200 0" fill:"none" stroke="black" stroke-width="4"/>
+  <text x="0" y="15" fill="red" transform="rotate (30 0,25)">I love SVG</text>
+</svg>
+  <br>
+  <br>
+
+  <!-- 10. Stroking -->
+  <h2>10. Stroking</h2>
+  <h3>stroke</h3>
+  <svg height="200" width="400">
+    <g fill="none" stroke-width="4">
+      <path stroke="black" d="M5 20 L 300 20"/>
+      <path stroke="red" d="M5 40 L 300 40"/>
+      <path stroke="blue" d="M5 60 L 300 60"/>
+    </g>
+  </svg>
+
+  <br>
+  <br>
+  <h3>stroke-width</h3>
+  <svg height="200" width="400">
+    <g fill="none" stroke="black">
+      <path stroke-width="4" d="M5 20 L 300 20"/>
+      <path stroke-width="6" d="M5 40 L 300 40"/>
+      <path stroke-width="8" d="M5 60 L 300 60"/>
+    </g>
+  </svg>
+  <br>
+  <br>
+  <h3>stroke-linecap</h3>
+  <svg height="200" width="400">
+    <g fill="none" stroke="black" stroke-width="4">
+      <path  stroke-linecap="butt" d="M5 20 L 300 20"/>
+      <path stroke-linecap="round" d="M5 40 L 300 40"/>
+      <path stroke-linecap="square" d="M5 60 L 300 60"/>
+    </g>
+  </svg>
+  <br>
+  <br>
+  <h3>stroke-dasharray</h3>
+  <svg height="200" width="400">
+    <g fill="none" stroke="black" stroke-width="4">
+      <path  stroke-dasharray="5,5" d="M5 20 L 300 20"/>
+      <path stroke-dasharray="10,10" d="M5 40 L 300 40"/>
+      <path stroke-dasharray="20,10,5,5,5,10" d="M5 60 L 300 60"/>
+    </g>
+  </svg>
+  <br>
+  <br>
+  <br>
+  <!-- 12. Filter -->
+  <h3>12.Filter</h3>
+  <svg height="100" width="100">
+    <defs>
+      <filter id="f1" x="0" y="0">
+        <feGaussianBlur in="SourceGrapic" stdDeviation="15"/>
+    </defs>
+    <rect height="50" width="90" stroke="green" stroke-width="4" fill="blue" filter="url(#f1)"/>
+  </svg>
+
+  <br>
+  <br>
+  <br>
+  <svg height="100" width="200">
+    <defs>
+      <filter id="f2" x="0" y="0">
+        <feGaussianBlur in="SourceGrapic" stdDeviation="20"/>
+      </filter>
+    </defs>
+
+    <circle cx=100 cy="50" r="40" fill="red" stroke="black" stroke-width="4" filter="url(#f2)"/>
+  </svg>
+  <br>
+  <br>
+  <br>
+  <!-- 13. filter shadow -->
+  <h3>12.Filter shadow</h3>
+  <svg height="200" width="200">
+    <defs>
+      <filter id="f3" x="0" y="0" height="200%" width="200%">
+        <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20"/>
+        <feColorMatrix result='matrixOut' in="offOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+        <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10"/>
+        <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+      </filter>
+    </defs>
+
+    <rect height="70" width="150" fill="yellow" stroke="blue" stroke-width="4" filter="url(#f3)"/>
+  </svg>
+
+<br>
+  <svg height="140" width="140">
+  <defs>
+    <filter id="f4" x="0" y="0" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+      <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+      values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+      <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+  <rect width="90" height="90" stroke="green" stroke-width="3"
+  fill="pink" filter="url(#f4)" />
+</svg>
+<br>
+  <svg width="200" height"400">
+    <defs>
+      <filter id ="f6" x="0" y="0" height="200%" width="200%">
+        <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20"/>
+        <feColorMatrix result="matrixOut" in="offOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+        <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10"/>
+        <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+      </filter>
+    </defs>
+    <rect width="90" height="90" stroke="green" stroke-width="3"
+    fill="gray" filter="url(#f4)" />
+  </svg>
+
+
+  <!-- 13. linearGradient-->
+  <!-- <h3>13.linear Gradient</h3>
+  <svg height="200" width=="400">
+    <defs>
+      <linearGradient id="r1" x1="0%" x2="0%" y1="0%" y2="100%">
+        <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1"/>
+      </linerGradient>
+    </defs>
+    <ellipse cx="200" cy="100" rx="150" ry="90" fill="url(#r1)" stroke="red"/>
+    <text fill="white" text-size="45" font-family="Fira Mono" x="120" y="100">Love you di Karuvachii</text>
+  </svg>
+ -->
+
+  <br><br><br>
+  <!-- 14. radialGradient-->
+  <h3>14.radial Gradient</h3>
+  <svg height="200" width="400">
+    <defs>
+      <radialGradient id="r2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1"/>
+      </radialGradient>
+    </defs>
+    <ellipse cx="200" cy="100" rx="140" ry="70" fill="url(#r2)"/>
+  </svg>
+  <br>
+
+
+  <svg height="150" width="500">
+  <defs>
+    <radialGradient id="grad1" cx="30%" cy="20%" r="30%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);
+      stop-opacity:0" />
+      <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+</svg>
+
+</body>
+</html>

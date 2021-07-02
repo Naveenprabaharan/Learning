@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> SVG | Canvas </title>
+
+</head>
+<body>
+  <!-- 01.Canvas DRawing -->
+  <h2>DRawing</h2>
+  <canvas id="canVas" width="300" height="300" style="border: 1px solid black"></canvas>
+  <script type="text/javascript">
+    var canvas =document.getElementById("canVas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle="#FF0000";
+    ctx.fillRect(0, 0, 150, 75)
+  </script>
+
+<canvas id="myCanvas" width="300" height="300" style="border: 1px solid black"></canvas>
+
+  <script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 150, 75);
+</script>
+
+<canvas id="newcanvas" width="300" height="300" style="border: 1px solid black"></canvas>
+
+<script type="text/javascript">
+  var canvas=document.getElementById("newcanvas");
+  var ctr=canvas.getContext("2d");
+  ctr.fillStyle="#FF0000";
+  ctr.fillRect(0, 0, 300, 300);
+</script>
+<br>
+<br>
+<br>
+
+<!-- 02.Coordinate -->
+  <h2>Coordinate</h2>
+
+  <canvas id="canvas-1" width="300" height="300" style="border:2px solid black"></canvas>
+
+  <!-- <script type="text/javascript">
+    var canvas=document.getElementById("canvas-1");
+    var objec=canvas.getContext("2d");
+    objec.moveTo(0,0);
+    objec.lineTo(150,150);
+    objec.stroke()
+  </script> -->
+<br><br><br>
+  <!-- 02.GRADIENT -->
+  <!-- <h2>GRADIENT</h2>
+   <canvas id="canvas" width="300" height="300" style="border:1px solid black"></canvas>
+
+  <script type="text/javascript">
+    var can=document.getElementById("canvas");
+    var obj=can.getContext("2d");
+
+    //GRADIENT
+    var g=obj.createLinearGradient(0,0,200,0);
+    g.addColorStop(0,"red");
+    g.addColorStop(1,"blue");
+
+    //add color
+    obj.fillStyle=g;
+    obj.fillRect(0,0,250,150);
+  </script> -->
+  <br><br><br>
+  <!-- 02.text -->
+  <h2>TEXT</h2>
+  <canvas id="canvas" width="600" height="600" style="border:2px solid black"></canvas>
+  <!-- <script type="text/javascript">
+    var ele=document.getElementById("canvas");
+    var text=ele.getContext("2d");
+    //fill TEXT
+    text.font="40px Arial";
+    text.fillText("hello World!",200,200);
+  </script> -->
+  <!-- <script type="text/javascript">
+    var ele=document.getElementById("canvas");
+    var text=ele.getContext("2d");
+    //fill TEXT
+    text.font="40px Arial";
+    text.strokeText("hello World!",200,200);
+  </script>-->
+
+
+  <!-- <script type="text/javascript">
+    var ele=document.getElementById("canvas");
+    var text=ele.getContext("2d");
+    //fill TEXT
+    text.font="40px Arial";
+    text.fillStyle="blue";
+    text.textAllign="center"
+    text.fillText("hello World!",canvas.width/2,canvas.height/2);
+  </script> -->
+
+  <h2>4.IMAGE </h2>
+  <canvas id="micanvas" width="600" height="600" style="border:2px solid black"></canvas>
+  <img id="car" src="https://image.shutterstock.com/image-illustration/modern-cars-studio-room-3d-260nw-735402217.jpg" alt="car image">
+  <script type="text/javascript">
+
+  window.onload=function()
+  {
+    //find element
+    var canvas=document.getElementById("micanvas");
+    //create object
+    var ctr=canvas.getContext("2d");
+    //call image
+    var car=document.getElementById("car");
+    ctr.drawImage(car,10,10);
+  };
+  </script>
+
+<!-- <script type="text/javascript">
+window.onload = function() {
+var canvas = document.getElementById("mCanvas");
+var ctx = canvas.getContext("2d");
+var img = document.getElementById("scream");
+ctx.drawImage(img, 10, 10);
+};
+</script> -->
+
+</body>
+
+</html>
