@@ -1,0 +1,46 @@
+body{
+    font-size: 24px;
+    text-align: center;
+    /* line-height: 300px; */
+}
+
+/* 
+<div id="Header">Header</div>
+            <div id="Left">Left</div>
+            <div id="main">main</div>
+            <div id="Right">Right</div>
+            <div id="Footer">Footer</div> */
+#header{
+    padding: 24px;
+    background-color: lightseagreen;
+    grid-area: header;
+}
+#footer{
+    padding: 24px;
+    background-color: lightsalmon;
+    grid-area: footer;
+}
+#main{
+    padding: 24px;
+    background-color: lightgrey;
+    grid-area: main;
+    height: 400px;
+}
+#left{
+    padding: 24px;
+    background-color: lightpink;
+    grid-area: aside;
+}
+#right{
+    padding: 24px;
+    background-color: lemonchiffon;
+    grid-area: beside;
+}
+
+#container{
+    display: grid;
+    grid-template-areas:
+     'header header header header header header'
+     'aside main main main main beside'
+     'footer footer footer footer footer footer';
+}

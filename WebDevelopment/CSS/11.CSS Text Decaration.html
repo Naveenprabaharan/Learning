@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS tect transform</title>
+	<style type="text/css">
+		body{
+			font-size: 1em;
+			font-weight: normal;
+			font-family: 'Times',serif, sans-serif;
+		}
+		#none{
+			text-decoration: none;
+		}
+		#Underline{
+			text-decoration: underline;
+		}
+
+		#Overline{
+			text-decoration: overline;
+		}
+
+		#Linethrough{
+			text-decoration: line-through;
+		}
+
+		#Blink{
+			text-decoration: blink;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Typography</h1>
+	<h2>CSS text Decoration</h2>
+	<ul>
+		<li>none</li>
+		<li>Underline</li>
+		<li>Overline</li>
+		<li>Line Through</li>
+		<li>Blink</li>
+	</ul>
+	<hr>
+	<p>this is has <a href="#" id="none">none</a> Underline Overline Linethrough Blink</p>
+	<p>this is has none <span id="Underline">Underline</span> Overline Linethrough Blink</p>
+	<p>this is has none Underline <span id="Overline">Overline</span> Linethrough Blink</p>
+	<p>this is has none Underline Overline <span id="Linethrough">Linethrough</span> Blink</p>
+	<p>this is has none Underline Overline Linethrough <span id="Blink">Blink</span></p>
+</body>
+</html>

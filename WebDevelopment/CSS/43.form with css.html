@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>43.Form with HTML</title>
+	<style type="text/css">
+		body{
+			width: 85%;
+			background: url('cs.png') no-repeat center center fixed;
+			/*background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: fixed;*/
+		}
+
+		legend{
+			background-color: crimson;
+			border-radius: 3px;
+			padding: 10px;
+			margin-left: -25px;
+		}
+		fieldset{
+			border-radius: 15px; 
+			margin-bottom: 20px;
+			border:2px solid crimson;
+			padding-left: 40px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Form with HTML</h1>
+	<form>
+		<fieldset>
+			<legend>Personal Details</legend>
+			<p>
+				<label for="name">Name:</label><br>
+				<input type="text" name="name" id="name">
+			</p>
+			
+			<p>
+				<label for="email">Email:</label><br>
+				<input type="text" name="email" id="email">
+			</p>
+
+			<p>
+				<label for="password">Password:</label><br>
+				<input type="text" name="password" id="password">
+			</p>
+
+			<p>
+				<label for="cpassword">Conform Password:</label><br>
+				<input type="text" name="cpassword" id="cpassword">
+			</p>
+		</fieldset>
+
+		<fieldset>
+			<legend>Eucation Details</legend>
+			<p>
+				<label for="quali">Qualification:</label><br>
+				<input type="text" name="quali" id="quali">
+			</p>
+
+			<p>
+				<label for="clg">College:</label><br>
+				<input type="text" name="clg" id="clg">
+			</p>
+
+			<p>
+				<label for="yrspasd">Year Passed Out:</label><br>
+				<input type="text" name="yrspasd" id="yrspasd">
+			</p>
+		</fieldset>
+
+
+		<button value="send">submit</button>
+	</form>
+</body>
+</html>

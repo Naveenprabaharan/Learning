@@ -1,0 +1,44 @@
+body{
+	width: 50%;
+	margin: 0 auto;
+	background-color: lightblue;
+}
+h1{text-align: center;}
+
+form{
+	width: 50%;
+	margin: 0 auto;
+	background-color: white;
+	}
+/* .formelement,.formelement1{
+	width: 80%;
+	padding-top:10px;
+	padding-left: 10%;
+	
+	
+	outline: none;
+} */
+
+input{
+	width: 100%;
+	border-left-width: none;
+	border: none;
+	background-color: none;
+	padding-top: 10px;
+	border-radius: 5px;
+}
+
+input:focus{
+	background-color: lightblue;
+}
+
+.formelement1:hover{
+	cursor: not-allowed;
+	
+}
+.formelement:hover{
+	background-color: lightblue;
+}
+.formelement:focus:required{
+	background-color: red;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>40 Table using css</title>
+	<style type="text/css">
+		table{
+			width: 80%;
+			border:3px solid red;
+			padding: 5px;
+		}
+
+		th,td{
+			border:1px solid red;
+			padding: 5px;
+		}
+		.allign{
+			text-align: left;
+		}
+		#allign1{
+			text-align: center;
+			font-weight: bold;
+		}
+		#heading{
+			background-color: gray;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Table using css</h1>
+	<br>
+	<br>
+	<h2>Time Table</h2>
+	<table>
+		<tr>
+			<th rowspan="2">DAY</th>
+			<th id="heading" colspan="11">Time</th>
+		</tr>
+
+		<tr id="allign1">
+			<td>9.00-10.00</td>
+			<td>10.00-11.00</td>
+			<td rowspan="6">Recss</td>
+			<td>11.30-12.30</td>
+			<td>12.30-1.30</td>
+			<td rowspan="6">Launch</td>
+			<td>2.00-3.00</td>
+			<td>3.00-4.00</td>
+			<td rowspan="6">Recss</td>
+			<td>4.10-4.50</td>
+			<td>4.50-5.30</td>
+		</tr>
+
+		<tr>
+			<th class="allign">Monday</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<th class="allign">Tusday</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<th class="allign">Wednessday</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<th class="allign">Thurseday</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<th class="allign">Friday</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
