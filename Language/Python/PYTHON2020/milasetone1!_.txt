@@ -1,0 +1,68 @@
+1.board
+2.player_input
+3.place_marker
+4.win_check
+5.choose_first
+6.spacecheck
+7.full_board_check
+8.chise_one
+9.replay
+10.play_game
+
+## Game starts Now!!!
+
+print ("Welcome To the Tck Tok Toe Game!!! ")
+while True:
+    the_board=[' ']*10
+    player1_marker,player2_marker=player_input()
+    turn=choose_first()
+    print( turn + 'Play first! ')
+    
+    game_on=input('Do you want play the Game, type "Yes or No ?').lower()
+    if game_on[0]=='y':
+        game=True
+    else:
+        game=False
+        
+    while game:
+        if turn=='player_1':
+            display_board(the_board)
+            position=player_choise(the_board)
+            place_marker(the_board,player1_marker,position)
+            
+        
+        
+            if win_check(the_board,player1_marker):
+                display_board(the_board)
+                print("Player 1 has won the match!! ")
+                game=False
+            else:
+                if full_board_check(the_board):
+                    display_board(the_board)
+                    print('the match was "TIE"')
+                    break
+                else:
+                    turn='palyer_2'
+        else:
+            ##player_2==True:
+            display_board(the_board)
+            position=player_choise(the_board)
+            place_marker(the_board,player2_marker,position)
+            
+        
+        
+            if win_check(the_board,player2_marker):
+                display_board(the_board)
+                print("Player 1 has won the match!! ")
+                game=False
+            else:
+                if full_board_check(the_board):
+                    display_board(the_board)
+                    print('the match was "TIE"')
+                    break
+                else:
+                    turn='palyer_1'
+
+                
+    if not replay():
+        break
